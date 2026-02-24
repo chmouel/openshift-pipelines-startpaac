@@ -143,7 +143,7 @@ wait_for_resource() {
 
   echo_color -n brightgreen "Waiting for ${display_name} to be ready in ${namespace}: "
   local i=0
-  local max_wait=120 # seconds
+  local max_wait=300 # seconds
   local interval=2   # seconds
   local max_retries=$((max_wait / interval))
 
